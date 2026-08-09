@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>我的成长Wiki</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="brand"><span class="logo-dot"></span><span>我的成长Wiki</span></div>
+    <div class="search-box"><input type="text" id="searchInput" placeholder="🔍 搜索文章…"></div>
+    <nav class="nav-tree" id="navTree"></nav>
+    <div class="sidebar-foot">
+      <button class="icon-btn" id="themeBtn" title="切换深色/浅色">🌙</button>
+      <span>🐾 只有我能编辑</span>
+    </div>
+  </aside>
+  <div class="mask" id="mask"></div>
+  <main class="content">
+    <header class="topbar">
+      <button class="hamburger" id="hamburger" title="打开目录">☰</button>
+      <span class="crumb" id="crumb"></span>
+    </header>
+    <article class="article" id="article">
+      <h1 id="articleTitle"></h1>
+      <div id="articleBody" class="markdown-body"></div>
+    </article>
+    <div class="empty" id="empty" style="display:none">
+      <p>还没有文章，先从左侧选一个分类看看吧～</p>
+    </div>
+    <footer class="content-foot">Made with 🐾 · 我的成长Wiki · 记录我的一步步</footer>
+  </main>
+</div>
+<script src="js/marked.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

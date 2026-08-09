@@ -1,0 +1,62 @@
+{
+  "title": "我的成长Wiki",
+  "categories": [
+    {
+      "name": "关于我",
+      "articles": [
+        {
+          "title": "关于我",
+          "file": "docs/01-关于我/01-关于我.md"
+        }
+      ]
+    },
+    {
+      "name": "成长记录",
+      "articles": [
+        {
+          "title": "成长时间线",
+          "file": "docs/02-成长记录/01-成长时间线.md"
+        },
+        {
+          "title": "每月总结",
+          "file": "docs/02-成长记录/02-每月总结.md"
+        }
+      ]
+    },
+    {
+      "name": "学习笔记",
+      "articles": [
+        {
+          "title": "计算机基础",
+          "file": "docs/03-学习笔记/01-计算机基础.md"
+        },
+        {
+          "title": "算法与数据结构",
+          "file": "docs/03-学习笔记/02-算法与数据结构.md"
+        },
+        {
+          "title": "前端开发",
+          "file": "docs/03-学习笔记/03-前端开发.md"
+        }
+      ]
+    },
+    {
+      "name": "我的项目",
+      "articles": [
+        {
+          "title": "项目总览",
+          "file": "docs/04-我的项目/01-项目总览.md"
+        }
+      ]
+    },
+    {
+      "name": "工具",
+      "articles": [
+        {
+          "title": "成长小屋打卡",
+          "file": "docs/05-工具/01-成长小屋打卡.md"
+        }
+      ]
+    }
+  ]
+}
