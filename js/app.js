@@ -2,6 +2,7 @@
 if (window.marked) { marked.setOptions({ gfm: true, breaks: true }); }
 const $ = id => document.getElementById(id);
 let NAV = null;
+const CAT_EMOJI = { "关于我":"🐱", "成长记录":"🌱", "学习笔记":"📚", "我的项目":"🚀", "工具":"🛠️" };
 
 function findArticle(file) {
   if (!NAV) return null;
@@ -24,7 +25,7 @@ function buildNav() {
     sec.className = "nav-cat";
     const head = document.createElement("div");
     head.className = "nav-cat-head";
-    head.textContent = cat.name;
+    head.textContent = (CAT_EMOJI[cat.name] || "🐾") + " " + cat.name;
     sec.appendChild(head);
     cat.articles.forEach(art => {
       const a = document.createElement("a");
@@ -109,7 +110,7 @@ function showLocalNotice() {
   $("crumb").textContent = "提示";
   document.title = "提示 · 我的成长Wiki";
   $("articleTitle").textContent = "本地直接打开看不到内容";
-  $("articleBody").innerHTML = '<div class="notice" style="background:var(--accent-soft);padding:16px 20px;border-radius:14px;line-height:2">浏览器不允许本地文件之间互相读取，所以直接双击打开是空白的。<br><br>请 <b>双击「本地预览.bat」</b>（和 index.html 在同一个文件夹里），它会自动打开一个能正常显示的本地预览。<br>或者访问已经发布到网上的网址。</div>';
+  $("articleBody").innerHTML = '<div class="notice">浏览器不允许本地文件之间互相读取，所以直接双击打开是空白的。<br><br>请 <b>双击「本地预览.bat」</b>（和 index.html 在同一个文件夹里），它会自动打开一个能正常显示的本地预览。<br>或者访问已经发布到网上的网址。</div>';
 }
 
 async function init() {
